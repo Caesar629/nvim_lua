@@ -41,11 +41,13 @@ use {
   use "windwp/nvim-autopairs" -- 自动补全括号
   use "akinsho/bufferline.nvim" -- buffer分割线
   use "lewis6991/gitsigns.nvim" -- 左则git提示
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- 文件检索
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
   use {'neoclide/coc.nvim', branch = 'release'} --COC
+  use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.4',
+-- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+
   if packer_bootstrap then
     require('packer').sync()
   end
