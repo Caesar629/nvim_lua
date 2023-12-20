@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/ws/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["solarized-osaka.nvim"] = {
+    loaded = true,
+    path = "/home/ws/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
+    url = "https://github.com/craftzdog/solarized-osaka.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/ws/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -183,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ws/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
-  },
-  ["vim-deus"] = {
-    loaded = true,
-    path = "/home/ws/.local/share/nvim/site/pack/packer/start/vim-deus",
-    url = "https://github.com/ajmwagar/vim-deus"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

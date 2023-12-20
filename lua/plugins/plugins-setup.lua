@@ -24,10 +24,11 @@ vim.cmd([[
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'ajmwagar/vim-deus' --主题
+  use 'craftzdog/solarized-osaka.nvim'
+  -- use 'ajmwagar/vim-deus' --主题
   use 'vim-airline/vim-airline' --状态栏
   use 'vim-airline/vim-airline-themes'
-use {
+  use {
     'nvim-tree/nvim-tree.lua',  -- 文档树
     requires = {
       'nvim-tree/nvim-web-devicons', -- 文档树图标
