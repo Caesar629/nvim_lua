@@ -13,6 +13,7 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "clangd",
+    "pyright",
   },
 })
 
@@ -23,6 +24,10 @@ require("lspconfig").lua_ls.setup {
 }
 
 require("lspconfig").clangd.setup {
+  capabilities = capabilities,
+}
+
+require("lspconfig").pyright.setup {
   capabilities = capabilities,
 }
 
