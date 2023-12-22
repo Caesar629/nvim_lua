@@ -13,5 +13,5 @@ require("plugins/telescope")
 require("plugins/lsp")
 require("plugins/cmp")
 require("plugins/color")
-
+require("plugins/lualine")
 

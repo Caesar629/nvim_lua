@@ -26,13 +26,15 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'craftzdog/solarized-osaka.nvim'
   -- use 'ajmwagar/vim-deus' --主题
-  use 'vim-airline/vim-airline' --状态栏
-  use 'vim-airline/vim-airline-themes'
   use {
     'nvim-tree/nvim-tree.lua',  -- 文档树
     requires = {
       'nvim-tree/nvim-web-devicons', -- 文档树图标
     }
+  }
+  use {
+    'nvim-lualine/lualine.nvim',  -- 状态栏
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }  -- 状态栏图标
   }
   use "christoomey/vim-tmux-navigator" -- 用ctl-hjkl来定位窗口
   use "nvim-treesitter/nvim-treesitter" -- 语法高亮
