@@ -14,5 +14,7 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "clangd",
     "pyright",
+    "jdtls",
   },
+  automatic_installation = true,
 })
