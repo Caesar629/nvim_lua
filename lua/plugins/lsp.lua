@@ -17,21 +17,12 @@ require("mason-lspconfig").setup({
   },
 })
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local lspconfig = require("lspconfig")
+lspconfig.pyright.setup{}
+lspconfig.clangd.setup{}
+lspconfig.lua_ls.setup{}
 
-require("lspconfig").lua_ls.setup {
-  capabilities = capabilities,
-}
-
-require("lspconfig").clangd.setup {
-  capabilities = capabilities,
-}
-
-require("lspconfig").pyright.setup {
-  capabilities = capabilities,
-}
-
+vim.keymap.set('n', '<LEADER>=', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<LEADER>-', vim.diagnostic.goto_prev)
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-vim.keymap.set('n', '<LEADER>-', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '<LEADER>=', vim.diagnostic.goto_next)

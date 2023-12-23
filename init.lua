@@ -14,4 +14,5 @@ require("plugins/lsp")
 require("plugins/cmp")
 require("plugins/color")
 require("plugins/lualine")
-
+require("plugins/indentscope")
+require("plugins/conform")
